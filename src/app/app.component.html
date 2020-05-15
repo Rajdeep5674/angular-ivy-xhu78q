@@ -1,5 +1,12 @@
+<script>
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+});
+</script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <div class="container" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center;">
 
@@ -43,6 +50,12 @@
       <p>{{message}}</p>
       <!--table for displaying basic details of customer-->
       <h2>Post your query here</h2>
+      <div class="card">
+         <form class="form-inline" action="/send_message" method="POST">
+            <input class="form-control mr-sm-2" type="text" placeholder="Message" name="send_message">
+            <button class="btn btn-primary" type="submit">Send</button>
+         </form>
+      </div>
     </div>
   </div>
   <div class="col-sm-2 border bg-light" id="viewSection">

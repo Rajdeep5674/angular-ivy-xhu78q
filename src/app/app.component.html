@@ -15,7 +15,6 @@
   </form>
 </nav>
 <!--horizontal search bar end-->
-
 <div class="row">
   <div class="col-sm-3 border bg-light">
     <nav class="navbar bg-light">
@@ -25,22 +24,16 @@
             <a class="nav-link text-center border">Menu</a>
           </li>
           <li class="nav-item border text-wrap">
-            <a class="nav-link" href="#viewSection" (click)=viewBasicDetails()>View Basic Details</a>
+            <a class="nav-link" href="#viewSection" (click)=viewBasicDetails()>Rail</a>
           </li>
           <li class="nav-item border text-wrap">
-            <a class="nav-link" href="#viewSection" (click)=checkAccountBalance()>Account Balance</a>
+            <a class="nav-link" href="#viewSection" (click)=checkAccountBalance()>Bank</a>
           </li>
           <li class="nav-item border text-wrap">
-            <a class="nav-link" href="#viewSection" (click)=fundTransfer()>Fund Transfer</a>
+            <a class="nav-link" href="#viewSection" (click)=fundTransfer()>SSC</a>
           </li>
             <li class="nav-item border text-wrap">
-            <a class="nav-link" href="#viewSection" (click)=editBasicDeatils()>Edit Basic Details</a>
-          </li>
-            <li class="nav-item border text-wrap">
-            <a class="nav-link" href="#viewSection" (click)=pinChange()>Pin Change</a>
-          </li>
-            <li class="nav-item border text-wrap">
-            <a class="nav-link" href="#viewSection" (click)=more()>More..</a>
+            <a class="nav-link" href="#viewSection" (click)=editBasicDeatils()>Other Exams</a>
           </li>
         </ul>
     </nav>
@@ -49,31 +42,7 @@
     <div class="container border p-1 my-1">
       <p>{{message}}</p>
       <!--table for displaying basic details of customer-->
-      <h2>Your Basic details</h2>
-      <p>To edit your basic details please click to edit basic details</p>
-          <div class="table-responsive">
-              <table class="table table-striped border">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Address</th>
-                    <th>Date of Birth</th>
-                    <th>Phone number</th>
-                    <th>Your Username</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let customer of customerDetails">
-                    <td>{{customer.name}}</td>
-                    <td>{{customer.address}}</td>
-                    <td>{{customer.DOB}}</td>
-                    <td>{{customer.phone}}</td>
-                    <td>{{customer.username}}</td>
-                  </tr>
-                </tbody>
-              </table>
-          </div>
-          <!--table end-->
+      <h2>Post your query here</h2>
     </div>
   </div>
   <div class="col-sm-2 border bg-light" id="viewSection">
